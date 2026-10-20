@@ -1,0 +1,70 @@
+{
+  "top_themes": [
+    {
+      "name": "Unstable QAS test environment",
+      "sprints": ["Sprint 38", "Sprint 39", "Sprint 40", "Sprint 41", "Sprint 43"],
+      "evidence_quotes": [
+        "QAS test environment was down for 3 days after the client refresh",
+        "Test system transports were delayed again because of the QAS lock window",
+        "Could not test the output determination change - QAS transports pending for 4 days"
+      ]
+    },
+    {
+      "name": "Stories entering the sprint with unclear requirements",
+      "sprints": ["Sprint 38", "Sprint 39", "Sprint 40", "Sprint 42"],
+      "evidence_quotes": [
+        "Requirements for the rebate agreement story were unclear and changed twice",
+        "Acceptance criteria for the dunning story were too vague to test against",
+        "Business could not explain the expected requirement for credit limit tolerance"
+      ]
+    },
+    {
+      "name": "Mid-sprint scope changes from the business",
+      "sprints": ["Sprint 38", "Sprint 41", "Sprint 42", "Sprint 43"],
+      "evidence_quotes": [
+        "Business added an urgent mid-sprint request for a new billing output type",
+        "Mid-sprint scope change - management asked for an EDI order change report",
+        "Scope changed mid-sprint when a pricing condition story was swapped in"
+      ]
+    },
+    {
+      "name": "Cross-team dependency on FI/CO (solved)",
+      "sprints": ["Sprint 39", "Sprint 40"],
+      "evidence_quotes": [
+        "Waiting on the FI team to configure the billing interface account determination",
+        "FI/CO weekly sync resolved the account determination blocker quickly"
+      ]
+    }
+  ],
+  "root_causes": [
+    {
+      "cause": "The test environment is controlled outside the team",
+      "explanation": "The outages come from client refreshes, lock windows and unplanned system copies, which are all decisions made in Basis or landscape planning. The team's actions (booking refresh slots, scripting test data) fixed what the team controls, which is why the test-data problem went away while the outages kept coming. The Sprint 43 escalation is the first action aimed at the real owner."
+    },
+    {
+      "cause": "No agreement with stakeholders on protecting the sprint",
+      "explanation": "The scope freeze worked for two sprints, then requests came back from management and the business ('management asked for an EDI order change report'). A freeze and a change log only bind the PO. The people making the requests never agreed to the rule, so it slips as soon as pressure rises."
+    },
+    {
+      "cause": "Business decision-makers are missing from refinement",
+      "explanation": "Writing acceptance criteria and a Definition of Ready helped for one sprint, but 'Business could not explain the expected requirement' shows the people in the room can't always make the decision. Requirements stay open until someone with authority looks at them, which is often mid-sprint. The early success of the 3 Amigos sessions points the same way: the right people talking before the sprint starts."
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Agree a QAS availability calendar with Basis and track downtime",
+      "detail": "Get the planned refreshes, lock windows and system copies for the next release from Basis and plan sprint testing around them. Record the hours of QAS downtime every sprint so the escalation to the steering committee is backed by numbers, not just retro notes.",
+      "owner": "Scrum Master with the Basis lead"
+    },
+    {
+      "title": "Agree a single intake route and a small buffer with stakeholders",
+      "detail": "Instead of a freeze only the team knows about, agree with management that every new request goes through the PO, and keep about 10% of sprint capacity for genuine urgent items. Show each swap and what it pushed out in the sprint review, so the cost of a change is visible to the people asking for it.",
+      "owner": "Product Owner"
+    },
+    {
+      "title": "Name a business decision-maker for every story before it is Ready",
+      "detail": "Add one line to the Definition of Ready: a named key user who can answer requirement questions within a day. Keep the 3 Amigos sessions, and at each retro check how many stories actually met the DoR, so it doesn't quietly fade again.",
+      "owner": "Product Owner and Scrum Master"
+    }
+  ]
+}

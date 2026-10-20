@@ -1,0 +1,43 @@
+sprint,date,category,note
+Sprint 38,2026-05-04,went_well,Smooth demo of the new credit check in sales order creation (VA01)
+Sprint 38,2026-05-04,went_well,Pairing between ABAP dev and functional consultant on pricing routine
+Sprint 38,2026-05-04,didnt_go_well,QAS test environment was down for 3 days after the client refresh
+Sprint 38,2026-05-04,didnt_go_well,Business added an urgent mid-sprint request for a new billing output type
+Sprint 38,2026-05-04,didnt_go_well,Requirements for the rebate agreement story were unclear and changed twice
+Sprint 38,2026-05-04,action,Book QAS refresh slots with the Basis team two weeks in advance
+Sprint 38,2026-05-04,action,PO to freeze sprint scope after planning; new requests go to the backlog
+Sprint 39,2026-05-18,went_well,Scope stayed stable all sprint - no surprise requests
+Sprint 39,2026-05-18,went_well,Good collaboration with key users during UAT of delivery blocks
+Sprint 39,2026-05-18,didnt_go_well,Test data in QAS was missing customer master records so testing was blocked
+Sprint 39,2026-05-18,didnt_go_well,Acceptance criteria for the dunning story were too vague to test against
+Sprint 39,2026-05-18,didnt_go_well,Waiting on the FI team to configure the billing interface account determination
+Sprint 39,2026-05-18,action,Write acceptance criteria together with key users before refinement ends
+Sprint 40,2026-06-01,went_well,Daily stand-up kept under 15 minutes
+Sprint 40,2026-06-01,went_well,Transport to QAS went through first time for the ATP check changes
+Sprint 40,2026-06-01,didnt_go_well,Test system transports were delayed again because of the QAS lock window
+Sprint 40,2026-06-01,didnt_go_well,Business could not explain the expected requirement for credit limit tolerance
+Sprint 40,2026-06-01,didnt_go_well,Unclear requirement on partial deliveries - spec did not match what sales expected
+Sprint 40,2026-06-01,didnt_go_well,Dependency on the FI/CO team for the revenue recognition interface slowed us down
+Sprint 40,2026-06-01,action,Introduce a Definition of Ready checklist including acceptance criteria and test data
+Sprint 40,2026-06-01,action,Set up a weekly sync with the FI/CO team on billing and interface dependencies
+Sprint 41,2026-06-15,went_well,Definition of Ready helped - refinement felt much clearer
+Sprint 41,2026-06-15,went_well,FI/CO weekly sync resolved the account determination blocker quickly
+Sprint 41,2026-06-15,didnt_go_well,QAS environment unavailable for two days due to unplanned system copy
+Sprint 41,2026-06-15,didnt_go_well,Regression testing squeezed into the last day because the test environment was blocked
+Sprint 41,2026-06-15,didnt_go_well,Mid-sprint scope change - management asked for an EDI order change report
+Sprint 41,2026-06-15,action,Automate creation of test data (customers and materials) in QAS with a script
+Sprint 41,2026-06-15,action,Add a scope change log so the PO can show the trade-off when new requests arrive
+Sprint 42,2026-06-29,went_well,Automated test data script saved hours of manual setup
+Sprint 42,2026-06-29,went_well,Great teamwork to close the invoice split bug before the release
+Sprint 42,2026-06-29,didnt_go_well,New urgent request added mid-sprint for the credit memo approval workflow
+Sprint 42,2026-06-29,didnt_go_well,Requirements for the intercompany billing story were unclear and missed edge cases
+Sprint 42,2026-06-29,didnt_go_well,Too many meetings and poor communication with the offshore team
+Sprint 42,2026-06-29,action,Run a 3 Amigos session (PO + dev + tester) for every story before it enters the sprint
+Sprint 42,2026-06-29,action,Move offshore handover to a fixed 30-minute overlap slot
+Sprint 43,2026-07-13,went_well,3 Amigos sessions caught two misunderstandings early
+Sprint 43,2026-07-13,went_well,Sprint goal achieved for the first time in four sprints
+Sprint 43,2026-07-13,didnt_go_well,QAS test environment slow and transports stuck again during the regression test
+Sprint 43,2026-07-13,didnt_go_well,Could not test the output determination change - QAS transports pending for 4 days
+Sprint 43,2026-07-13,didnt_go_well,Scope changed mid-sprint when a pricing condition story was swapped in
+Sprint 43,2026-07-13,action,Escalate the test environment capacity issue to the Basis lead and the steering committee
+Sprint 43,2026-07-13,action,Agree with stakeholders that mid-sprint additions need a matching item taken out
