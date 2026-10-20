@@ -116,7 +116,7 @@ c2.metric("Problems raised", int((df["category"] == "didnt_go_well").sum()))
 c3.metric("Action items", len(follow))
 worked = int((follow["status"] == "Worked").sum()) if not follow.empty else 0
 decided = int(follow["status"].isin(["Worked", "Didn't stick"]).sum()) if not follow.empty else 0
-c4.metric("Actions that worked", f"{worked} of {decided}" if decided else "-",
+c4.metric("Actions worked", f"{worked} of {decided}" if decided else "-",
           help="Only counts actions with a verdict (not 'too early to tell').")
 
 tab_patterns, tab_actions, tab_ai, tab_notes = st.tabs(
@@ -131,9 +131,12 @@ with tab_patterns:
     else:
         cols = st.columns(len(recurring))
         for col, r in zip(cols, recurring.itertuples()):
-            col.metric(r.theme, f"{r.sprints_with_issue} of {r.total_sprints} sprints",
-                       help=f"{r.notes} 'didn't go well' notes in total")
+            # Plain markdown instead of st.metric so long theme names wrap instead of being cut off
+            col.markdown(f"**{r.theme}**  \n"
+                         f"<span style='font-size:1.9rem'>{r.sprints_with_issue} of {r.total_sprints}</span> sprints",
+                         unsafe_allow_html=True)
             col.progress(r.sprints_with_issue / r.total_sprints)
+            col.caption(f"{r.notes} 'didn't go well' notes")
 
     st.subheader("Problem themes by sprint")
     st.caption("Each cell counts the *didn't go well* notes for that theme in that sprint. Darker = raised more often.")

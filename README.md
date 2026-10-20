@@ -1,5 +1,9 @@
 # 🔁 Retro Pattern Analyser
 
+[![Open the live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/)
+
+**▶️ Try it live: [https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app](https://retro-pattern-analyser-2srxmmskzetfmuz2vri7hg.streamlit.app/)** (free demo mode, no sign-up)
+
 **Spot the issues your Scrum team keeps raising, and check whether your retro action items actually worked.**
 
 Retrospective notes usually live in Miro boards or Confluence pages, one sprint at a time. The same problems come up again and again, and nobody checks whether last sprint's action items fixed anything. This app puts several sprints side by side so those patterns are easy to see.
